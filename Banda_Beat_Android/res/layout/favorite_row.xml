@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/row_bg"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal" >
+
+     <ImageView
+        android:id="@+id/track_image"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/placeholder" 
+        android:background="@drawable/image_border_small"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+       <TextView
+                android:id="@+id/track_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="TextView"
+                android:textColor="@color/song_name"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/track_album"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="TextView"
+                android:textColor="@color/song_album"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/track_duration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="TextView"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="13sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

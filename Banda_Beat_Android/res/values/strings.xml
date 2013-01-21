@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Banden Lehia</string>
+    <string name="profile_name">Profila</string>
+    <string name="playlist_public_name">BB Zerrendak</string>
+    <string name="error">Errore bat gertatu da. Sartu berriro mesedez.</string>
+    <string name="actualizando">Eguneratzen</string>
+    <string name="espere">Itxaron...</string>
+    <string name="favorite_empty">Ez daude abestirik</string>
+    <string name="playlist_empty">Zerrendak Banda Beat gunean sortu behar dituzu</string>
+    <string name="track_empty">Ez dauka abestirik</string>
+    <string name="no_songs">Ez dauka abestirik</string>
+</resources>

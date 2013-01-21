@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="12C2034" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Playlist" representedClassName="Playlist" syncable="YES">
+        <attribute name="dirty" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="downloaded" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="idPlaylist" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="songCount" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="songToken" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="token" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="tracks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Track" inverseName="playlist" inverseEntity="Track" syncable="YES"/>
+    </entity>
+    <entity name="Track" representedClassName="Track" syncable="YES">
+        <attribute name="album" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="duration" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="favorite" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="grupo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idTrack" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="imageBig" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageIphone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageMini" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageProfile" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageThumb" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="titulo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="token" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="playlist" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Playlist" inverseName="tracks" inverseEntity="Playlist" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Playlist" positionX="-812" positionY="-279" width="128" height="165"/>
+        <element name="Track" positionX="-515" positionY="-144" width="128" height="270"/>
+    </elements>
+</model>

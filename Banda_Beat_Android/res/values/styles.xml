@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Theme.MyTheme" parent="Theme.Sherlock.Light">
+        <item name="actionBarStyle">@style/Widget.MyTheme.ActionBar</item>
+        <item name="android:actionBarStyle">@style/Widget.MyTheme.ActionBar</item>
+        <item name="android:actionBarTabStyle">@style/Widget.MyTheme.Tab</item>
+        <item name="actionBarTabStyle">@style/Widget.MyTheme.Tab</item>
+        <item name="actionBarTabTextStyle">@style/Widget.MyTheme.TabText</item>
+		<item name="android:actionBarTabTextStyle">@style/Widget.MyTheme.TabText</item>
+		<item name="android:actionMenuTextColor">@android:color/white</item>
+		<item name="actionMenuTextColor">@android:color/white</item>
+    </style>
+
+    <style name="Widget.MyTheme.ActionBar" parent="Widget.Sherlock.Light.ActionBar">
+
+        <!-- Por un bug en Android esto hay que hacerlo por código -->
+        <!-- <item name="android:background">@drawable/actionbar_background</item> -->
+        <!-- <item name="background">@drawable/actionbar_background</item> -->
+        <item name="android:titleTextStyle">@style/Widget.MyTheme.ActionBar.Text</item>
+        <item name="titleTextStyle">@style/Widget.MyTheme.ActionBar.Text</item>
+    </style>
+
+    <style name="Widget.MyTheme.Tab" parent="Widget.Sherlock.Light.ActionBar.TabView">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@drawable/tab_indicator</item>
+    </style>
+
+    <style name="Widget.MyTheme.TabText" parent="Widget.Sherlock.Light.ActionBar.TabText">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="Widget.MyTheme.ActionBar.Text" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="LoginFormContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+</resources>
